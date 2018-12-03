@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+    <script src="vue.min.js"></script>
+    <script src="vue-resource.js"></script>
+    <script>
+        window.onload=function () {
+            var a=new Vue({
+                el:'#dd',
+                data:{
+                },
+                methods:{
+                    get:function () {
+                        this.$http.get('11.php',{
+                            a:1,
+                            b:2
+                        }).then(function (res) {
+                            alert(res.data);//成功
+                        },function (res) {
+                            alert(res.status);//失败
+                        })
+                    }
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div id="dd">
+    <input type="button"value="按钮"@click="get()">
+</div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> personal</title>
+    <link rel="stylesheet" type="text/css" href="../header.css">
+    <style>
+        header{
+            height: 36px;
+            border: 1px solid #0000001c;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            width: 1510px;
+        }
+        .shopcar{
+            font-size: 70px;
+            margin-top: 30px;
+            font-weight: bold;
+            margin-left: 614px;
+        }
+        .div1{
+            margin-top: 70px;
+            margin-left: 200px;
+            font-weight: bold;
+            height: 122px;
+            border: 1px solid #15151530;
+            width: 310px;
+        }
+        .divtop{
+            border: 1px solid #7474740f;
+            height: 514px;
+            width: 1509px;
+            background-color: #e7e7e721;
+            border-top:0;
+        }
+        .form3{
+            margin-top: -151px;
+            font-size: 13px;
+            margin-left: 675px;
+            width: 400px;
+            border: 1px solid #15151530;
+            height: 200px;
+            font-weight: bold;
+        }
+        .xiugai{
+            width: 70px;
+            background-color: white;
+            border: 1px solid;
+            border-radius: 8px;
+            height: 25px;
+            /* font-weight: bold; */
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+{{{a}}}
+<div class="divtop">
+    <div class="shopcar"id="form11">
+        我的账户
+    </div>
+    <div class="div1">
+        <a href="http://localhost:3019/form">
+            <div style="margin-left: 30px;margin-top: 20px;cursor: pointer">
+                我的订单
+            </div>
+        </a>
+        <a href="http://localhost:3019/address"><div style="margin-left: 30px;margin-top: 10px;">
+            收货地址
+        </div></a>
+        <div style="margin-left: 30px;margin-top: 10px;">
+            退出
+        </div>
+    </div>
+   <form method="post"action="/insertadd"><div class="form3">
+       <div style="    margin-top: 57px;margin-left: 32px">
+           所在地区：
+           <select style="height: 25px"name="province">
+               <option value="浙江">浙江</option>
+               <option value="广东">广东</option>
+               <option value="黑龙江">黑龙江</option>
+               <option value="辽宁">辽宁</option>
+               <option value="吉林">吉林</option>
+               <option value="江苏">江苏</option>
+               <option value="山东">山东</option>
+               <option value="四川">四川</option>
+               <option value="福建">福建</option>
+               <option value="云南">云南</option>
+               <option value="湖南">湖南</option>
+               <option value="四川">四川</option>
+           </select>
+           &nbsp;省
+           <select style="height: 25px  ;  width: 63.6px;"name="city">
+               <option value="杭州">杭州</option>
+               <option value="金华">金华</option>
+               <option value="宁波">宁波</option>
+               <option value="温州">温州</option>
+               <option value="嘉兴">嘉兴</option>
+               <option value="湖州">湖州</option>
+               <option value="绍兴">绍兴</option>
+               <option value="衢州">衢州</option>
+               <option value="舟山">舟山</option>
+               <option value="台州">台州</option>
+               <option value="丽水">丽水</option>
+           </select>
+           &nbsp;市
+           <select style="height: 25px;    width: 63.6px;"name="town">
+               <option value="上城">上城</option>
+               <option value="下城">下城</option>
+               <option value="拱墅">拱墅</option>
+               <option value="江干">江干</option>
+               <option value="西湖">西湖</option>
+               <option value="滨江">滨江</option>
+               <option value="萧山">萧山</option>
+               <option value="余杭">余杭</option>
+           </select>
+           &nbsp;区
+       </div>
+       <div style="margin-left: 32px;margin-top: 10px">
+           详细街道：<input type="text"style=" width: 260px;"name="street">
+       </div>
+       <div style="    margin-left: 317px;margin-top: 40px;">
+           <a><input type="submit" value="确认" class="xiugai"id="queren"onmouseenter="chang1()"onmouseleave="chang2()"style="cursor: pointer"onclick="changeem()"></a>
+       </div>
+       <input type="text"style="display: none"id="email222"value="2"name="email">
+   </div></form>
+</div>
+<footer style="margin-top: -1120px;position: absolute;margin-left: 76px;"id="footer_personal">
+    <div class="img9">
+        <a href="../about%20sharp/about%20sharp.html" target="_blank"><img src="../picture/关于Sharp.png" height="50" width="100"/></a>
+        <a href="http://localhost:3019/wuliu"target="_blank"><img src="../picture/物流信息.png" height="50" width="100"/></a>
+        <a href="../order%20status/order%20status.html"target="_blank"><img src="../picture/订单状态.png" height="50" width="100"/></a>
+        <a href="../Returns%20a%20replacement/Returns%20a%20replacement.html"target="_blank"><img src="../picture/退货换货.png" height="50" width="100"/></a>
+        <a href="../policy/policy.html"target="_blank"><img src="../picture/相关政策.png" height="50" width="100"/></a>
+        <a href="../Common%20problems/Common%20problems.html"target="_blank"><img src="../picture/常见问题.png" height="50" width="100"/></a>
+        <a href="../Contact%20us/Contact%20us.html"target="_blank"><img src="../picture/联系我们.png" height="50" width="100"/></a>
+        <a href="../join%20us/join%20us.html"target="_blank"><img src="../picture/加入我们.png" height="50" width="100"/></a>
+    </div>
+    <p class="p7">订阅Sharp最新动态</p>
+    <form action="" method="get" style="height: 100px">
+        <div class="relative3">
+            <input type="text" name="email" size="56" maxlength="24" value=" Email.." style="color: darkgray ;height: 30px ;width: 350px;border-color: black;"id="sub"onclick="clearme1()">
+        </div>
+        <div class="relative4">
+            <input type="button" value="订阅" style="height: 38px;width: 70px ;background: #1f1a1a;color: #FFFFFF;font-weight: bold;border: none;border-color: black"id="sub1"onclick="sub11()">
+        </div>
+        <div class="img10">
+            <a href="https://weixin.qq.com/" target="_blank"> <img src="../picture/微信.png" height="30" width="30"/></a>
+            <a href="https://weibo.com/" target="_blank"> <img src="../picture/微博.png" height="30" width="30"/></a>
+            <a href="http://www.tui-te.com/" target="_blank">    <img src="../picture/twitter新.png" height="30" width="30"/></a>
+            <a href="https://m.facebook.com/" target="_blank">    <img src="../picture/Facebook.png" height="30" width="30"/></a>
+            <a href="http://instagram.com/" target="_blank">   <img src="../picture/ins新.png" height="30" width="30"/></a>
+        </div>
+    </form>
+</footer>
+<script>
+    var aww1=document.getElementById("queren");
+    function chang1() {
+        aww1.style.color="white";
+        aww1.style.backgroundColor="black";
+    };
+    function chang2() {
+        aww1.style.color="black";
+        aww1.style.backgroundColor="white";
+    };
+</script>
+
+<script>
+    function changeem() {
+        var a=document.getElementById("email222");
+        var b=req.session.user;
+        a.value=b;
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <style type="text/css">
+       .relative1 {
+         position: absolute;
+           top: 23px;
+           left: 1200px;
+           width: 300px;
+           /*float: right;*/
+
+        }
+        .relative2 {
+            position: relative;
+            top: 31px;
+            left: 550px;
+            width: 400px;
+            /*background-color: white;*/
+            /*width: 1000px;*/
+        }
+        .relative3 {
+            position: relative;
+            top: 33px;
+            left: 529px;
+            width: 400px;
+            /*background-color: white;*/
+            /*width: 1000px;*/
+        }
+        .relative4 {
+            position: relative;
+            top: 15px;
+            left: 529px;
+            width: 400px;
+            /*background-color: white;*/
+            /*width: 1000px;*/
+        }
+
+        .relative5 {
+            position: relative;
+            top: -3px;
+            left: 529px;
+            width: 400px;
+            /*background-color: white;*/
+            /*width: 1000px;*/
+        }
+        .relative6 {
+            position: relative;
+            top: -21px;
+            left: 529px;
+            width: 400px;
+            /*background-color: white;*/
+            /*width: 1000px;*/
+        }
+        .relative7 {
+            position: relative;
+            top: -39px;
+            left: 529px;
+            width: 400px;
+            /*background-color: white;*/
+            /*width: 1000px;*/
+        }
+        .relative8 {
+            position: relative;
+            top: -57px;
+            left: 529px;
+            width: 400px;
+            /*background-color: white;*/
+            /*width: 1000px;*/
+        }
+        .relative9 {
+            position: relative;
+            top: -75px;
+            left: 529px;
+            width: 400px;
+            /*background-color: white; */
+            /*width: 1000px;*/
+        }
+        .relative10 {
+            position: relative;
+            top: -93px;
+            left: 529px;
+            width: 400px;
+            /*background-color: white;*/
+            /*width: 1000px;*/
+        }
+        .relative11 {
+            position: relative;
+            top: -111px;
+            left: 529px;
+            width: 400px;
+            /*background-color: white;*/
+            /*width: 1000px;*/
+        }
+        strong{
+            color: #1f1a1a;
+        }
+        strong:active{
+            color: blueviolet;
+        }
+        .sharp{
+            position: absolute;
+            top: -6px;
+            left: 2px;
+        }
+        .back{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+
+    </style>
+    <script>
+        function clearme1() {
+            var a=document.getElementById("1");
+            if(a.value=="昵称")
+            {
+                a.value=" ";
+            }
+
+        }
+    </script>
+    <script>
+        function clearme2() {
+            var a=document.getElementById("2");
+            if(a.value=="姓名")
+            {
+                a.value=" ";
+            }
+
+        }
+    </script>
+    <script>
+        function clearme3() {
+            var a=document.getElementById("3");
+            if(a.value=="证件号")
+            {
+                a.value=" ";
+            }
+
+        }
+    </script>
+    <script>
+        function clearme4() {
+            var a=document.getElementById("4");
+            if(a.value=="电子邮箱")
+            {
+                a.value=" ";
+            }
+
+        }
+    </script>
+    <script>
+        function clearme5() {
+            var a=document.getElementById("5");
+            if(a.value=="密码")
+            {
+                a.value=" ";
+            }
+
+        }
+    </script>
+    <script>
+        function clearme6() {
+            var a=document.getElementById("6");
+            if(a.value=="电话号码")
+            {
+                a.value=" ";
+            }
+
+        }
+    </script>
+    <script>
+        function clearme7() {
+            var a=document.getElementById("haha");
+            if(a.value=="所属区域")
+            {
+                a.value=" ";
+            }
+
+        }
+    </script>
+     <script>
+         function register() {
+             var i=0;
+             var a=document.getElementById("1");
+             var b=document.getElementById("2");
+             var c=document.getElementById("3");
+             var d=document.getElementById("4");
+             var e=document.getElementById("5");
+             var f=document.getElementById("6");
+             var h=document.getElementById("haha");
+             if(a.value=="昵称"||a.value==" ")
+             {
+                 i=1;
+                 alert("昵称不能为空！");
+             }
+             if(b.value=="姓名"||b.value==" ")
+             {
+                 i=2;
+                 alert("姓名不能为空！");
+             }
+             if(c.value=="证件号"||c.value==" ")
+             {
+                 i=3;
+                 alert("证件号不能为空！");
+             }
+             if(d.value=="电子邮箱"||d.value==" ")
+             {
+                 i=4;
+                 alert("电子邮箱不能为空！");
+             }
+             if(e.value=="密码"||e.value==" ")
+             {
+                 i=5;
+                 alert("密码不能为空！");
+             }
+             if(h.value=="所属区域"||h.value==" ")
+             {
+                 i=7;
+                 alert("所属区域未选择！");
+             }
+             if(f.value=="电话号码"||f.value==" ")
+             {
+                 i=6;
+                 alert("电话号码不能为空！");
+             }
+             if(i===0)
+             {
+                 alert("注册成功！");
+             }
+
+
+         }
+     </script>
+</head>
+<body style="margin: 0">
+<div class="back">
+    <img src="../picture/背景.jpg" width="100%" height="100%"/>
+</div>
+<form action="" method="get" style="height: 100px">
+<a href="../index2/index2.html" target="_blank"class="sharp"><img src="../picture/SHARP.png" height="53.89167" width="105.556"/></a>
+<div class="relative1">
+
+    <a href="http://www.tui-te.com/" target="_blank"><img src="../picture/twitter.png" height="36.67" width="47.5"/></a>
+    <a href="http://instagram.com/" target="_blank"><img src="../picture/ins.png" height="34.2006" width="38.9739"/></a>
+    <a href="https://m.facebook.com/" target="_blank"><img src="../picture/fcebook.png" height="34.9238" width="45.238"/></a>
+</div>
+<div class="relative2"><h1>
+    Welcome to Join Us!
+</h1></div>
+<div></div><div></div>
+<div class="relative3">
+    <input type="text" name="ID" size="56" maxlength="10" value="昵称" style="color: darkgray"id="1"onclick="clearme1()">
+</div>
+    <br><br>
+   <div class="relative4">
+       <input type="text" name="name" size="56" maxlength="10" value="姓名"style="color: darkgray"id="2"onclick="clearme2()">
+   </div>
+    <br><br>
+    <div class="relative5">
+        <input type="text" name="IDCARD" size="56" maxlength="18" value="证件号"style="color: darkgray"id="3"onclick="clearme3()">
+    </div>
+    <br><br>
+<div class="relative6">
+    <input type="text" name="email" size="56" maxlength="20" value="电子邮箱"style="color: darkgray"id="4"onclick="clearme4()">
+</div>
+    <br><br>
+  <div class="relative7">
+    <input type="text" name="password" size="56" maxlength="10" value="密码"style="color: darkgray"id="5"onclick="clearme5()">
+  </div>
+    <br><br>
+<div class="relative8">
+    <input type="text" list="ilist"value="所属区域"id="haha"onclick="clearme7()"style="color: darkgray">
+    <datalist id="ilist" style="color: darkgray">
+        <option label="中国 +86" value="中国 +86" ></option>
+        <option label="中国香港特别行政区+852" value="中国香港特别行政区+852"></option>
+        <option label="中国澳门特别行政区 +853" value="中国澳门特别行政区 +853"></option>
+        <option label="中国台湾地区 +886" value="中国台湾地区 +886"></option>
+        <option label="阿根廷 +54" value="阿根廷 +54"></option>
+        <option label="爱尔兰 +353" value="爱尔兰 +353"></option>
+        <option label="阿拉伯联合酋长国 +971" value="阿拉伯联合酋长国 +971"></option>
+        <option label="澳大利亚 +61" value="澳大利亚 +61"></option>
+        <option label="奥地利 +43" value="奥地利 +43"></option>
+        <option label="白俄罗斯 +375" value="白俄罗斯 +375"></option>
+        <option label="波兰 +43" value="波兰 +43"></option>
+    </datalist><input type="text" name="phone" size="30" maxlength="11" value="电话号码"style="color: darkgray"id="6"onclick="clearme6()">
+</div>
+    <br><br>
+   <div class="relative9">
+    <input name="queren" type="checkbox" value=""id="7">注册接收电子邮件，掌握所有 Sharp 最新动态
+   </div>
+<br><br>
+    <div class="relative10"><p>
+        一旦创建帐户，即表明你同意 Sharp 的 <strong><a href="private.html" target="_blank">隐私政策</a></strong> 和 <strong><a href="use.html" target="_blank">使用条款</a></strong>
+    </p></div>
+    <br><br>
+    <a class="relative11">
+       <input type="submit" value="立刻注册" style="height: 40px;width: 385px ;background: #1f1a1a;color: #FFFFFF;font-weight: bold"id="8"onclick="register()">
+      </a>
+    </div>
+    <br>
+    <br>
+</form>
+</body>
+</html>

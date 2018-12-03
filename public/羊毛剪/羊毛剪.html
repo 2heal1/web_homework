@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wool</title>
+    <style>
+        div.menu-bar ul ul {
+            display: none;
+        }
+
+        div.menu-bar li:hover ul {
+            display: block;
+        }
+        .h a{
+            color: bisque;
+            font-size: large;
+        }
+        .imgC {
+            position: absolute;
+            left: 700px;
+            top: 70px;
+            display: none;
+        }
+        a:hover +.imgC {
+            display: block;
+        }
+        ul li{
+            list-style-type:none;
+            z-index:0
+        }
+        .img1{
+            left: 5px;
+            position: absolute;
+            border: 0px;
+            padding: 0px;
+            top: 3px;
+
+        }
+        li{
+            width: 500px;
+            margin: 0px;
+        }
+        ul{
+            margin: 0px;
+        }
+        .img2{
+            position: absolute;
+            margin-left: -54px;
+            margin-top: 18px;
+        }
+        .img2 img:hover{
+            transform: scale(1.05);
+            cursor: default;
+            filter:alpha(Opacity=80);
+            -moz-opacity:0.8;
+            opacity: 0.8;
+        }
+        .img2 img{
+            cursor: pointer;
+            transition: all 0.6s;
+
+        }
+        .img3{
+            position: absolute;
+            left: 185px;
+            top: 45px;
+            width: 1300px;
+            z-index: 0;
+        }
+        .img3 img:hover{
+            transform: scale(1.05);
+            cursor: default;
+            filter:alpha(Opacity=80);
+            -moz-opacity:0.8;
+            opacity: 0.8;
+        }
+        .img3 img{
+            cursor: pointer;
+            transition: all 0.6s;
+
+        }
+        .img4{
+            position: absolute;
+            left: 699px;
+            top: -5px;
+        }
+        .img5{
+            position: absolute;
+            left: 1380px;
+            top: 1px;
+        }
+        .img6{
+            position: absolute;
+            left: 1430px;
+            top: 1px;
+        }
+        .img7{
+            position: absolute;
+            left: 1480px;
+            top: -5px;
+        }
+        .img8{
+            opacity: 0.5;
+            width: 165px;
+            position: absolute;
+            margin-top: -27px;
+            margin-left: 45px;
+        }
+        .img9{
+            margin-top: 0px;
+            opacity: 0.5;
+            margin-left: 20px;
+        }
+        .img10{
+            margin-top: 20px;
+            opacity: 0.5;
+            margin-left: 20px;
+        }
+        .img11{
+            margin-top: 0px;
+            opacity: 0.5;
+            margin-left: 20px;
+        }
+        .img12{
+            margin-top: -4px;
+            opacity: 0.5;
+            margin-left: 20px;
+        }
+        .img13{
+            margin-top: 0px;
+            opacity: 0.5;
+            margin-left: 20px;
+        }
+        .img14{
+            top: 127px;
+            position: absolute;
+            right: 12px;
+
+        }
+        .img15{
+            top: 127px;
+            position: absolute;
+            right: 12px;
+            display: none;
+        }
+        .img16{
+            opacity: 0.3;
+            width: 247px;
+            position: absolute;
+            margin-top: 2px;
+            margin-left: -247px;
+        }
+        .img17{
+            margin-left: 10px;
+            position: absolute;
+            width: 500px;
+            z-index: 0;
+            margin-top: 95px;
+        }
+        .img17 img:hover{
+            transform: scale(1.05);
+            cursor: default;
+            filter:alpha(Opacity=80);
+            -moz-opacity:0.8;
+            opacity: 0.8;
+        }
+        .img17 img{
+            cursor: pointer;
+            transition: all 0.6s;
+
+        }
+        .img18{
+            margin-left: 1065px;
+            margin-top: 15px;
+        }
+        .img18 img:hover{
+            transform: scale(1.05);
+            cursor: default;
+            filter:alpha(Opacity=80);
+            -moz-opacity:0.8;
+            opacity: 0.8;
+        }
+        .img18 img{
+            cursor: pointer;
+            transition: all 0.6s;
+
+        }
+        .p1{
+            position: absolute;
+            left: 80px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p2{
+            height: 53px;
+            width: 120px;
+            position: absolute;
+            left: 140px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p3{
+            position: absolute;
+            left: 220px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p4{
+            position: absolute;
+            width: 42px;
+            left: 1100px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p5{
+            position: absolute;
+            width: 42px;
+            left: 1150px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p6{
+            position: absolute;
+            left: 1250px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p7{
+            width: 188px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: black;
+            margin-left: 1070px;
+            margin-top: 70px;
+        }
+        .div1{
+            border: 2px solid #9e9e9e45;
+            margin-left: -9px;
+            width: 263px;
+            margin-top: -2px;
+            border-top-color: #ffffff00;
+            height: 1071px;
+            z-index: -2;
+            float: left;
+        }
+        .div2{
+            border-top: 0;
+            height: 95px;
+            width: 1515px;
+            border: 2px solid #9e9e9e45;
+            margin-top: -11px;
+            margin-left: -8px;
+            margin-right: -8px;
+            z-index: 2;
+        }
+        .div3{
+            font-size: 15px;
+            margin-top: 55px;
+            margin-left: 25px;
+        }
+        .div4{
+            font-size: 15px;
+            color: #000000ba;
+            margin-top: -5px;
+        }
+        .div5{
+            font-size: 15px;
+            margin-top: 0px;
+            margin-left: 25px;
+        }
+        .div6{
+            width: 200px;
+            margin-left: 20px;
+        }
+        .div7{
+            font-size: 15px;
+            margin-top: 0px;
+            margin-left: 25px;
+        }
+        .div8{
+            color: dimgray;
+            font-size: 14px;
+            height: 81px;
+            width: 147px;
+            border: 1px solid #c4c4c4;
+            border-top-color: #ffffff00;
+            float: right;
+            display: none;;
+
+        }
+        .div9{
+            height: 1070px;
+            width: 1251px;
+            margin-left: 257px;
+            color: dimgray;
+            font-size: 14px;
+            border: 1px solid #c4c4c4;
+            border-top-color: #ffffff00;
+        }
+        .div10{
+            color: dimgray;
+            font-size: 14px;
+            border: 2px solid #c4c4c48c;
+            margin-left: 53px;
+            height: 240px;
+            margin-top: 15px;
+        }
+        .h1{
+            height: 100px;
+            width: 261px;
+            border: 2px solid #9e9e9e45;
+            border-top-color: #ffffff00;
+            border-right-color: #ffffff00;
+        }
+        .h2{
+            margin-left: 75px;
+            font-size: 35px;
+            margin-top: 15px;
+        }
+        a:hover{
+            color: darkgray;
+        }
+        a{
+            color: #1f1a1a;
+            text-decoration: none;
+        }
+        .a1{
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 52px;
+        }
+        .a2{
+            margin-left: 170px;
+            font-size: 12px;
+            font-weight: bold;
+
+        }
+        .a3{
+            font-size: 13px;
+            margin-left: 50px;
+            font-weight: bold;
+        }
+        .input1{
+            margin-top: 5px;
+        }
+        .input2{
+            margin-left: 1096px;
+            height: 30px;
+            width: 144px;
+            margin-top: 22px;
+        }
+        .relative1{
+            margin-left: 1070px;
+            margin-top: 25px;
+        }
+        .relative2{
+            margin-left: 1352px;
+            margin-top: -37px;
+            border-radius: 3px;
+        }
+        footer{
+            height: 330px;
+            border: 1px solid #c4c4c4;
+            margin-top: 0;
+            width: 1508px;
+        }
+    </style>
+</head>
+<body>
+<header class="div2"id="header1">
+    <div class="menu-bar">
+        <ul>
+            <li>
+                <a class="img1"> <img src="../picture/展开.png" height="20" width="20"/></a>
+                <ul>
+                    <li class="img2">
+                        <a href="../about%20sharp/about%20sharp.html" target="_blank"><img src="../picture/关于Sharp.png" height="50" width="100"/></a>
+                        <a href="../Logistics%20information/Logistics%20information.html" target="_blank"><img src="../picture/物流信息.png" height="50" width="100"/></a>
+                        <a href="../order%20status/order%20status.html" target="_blank"><img src="../picture/订单状态.png" height="50" width="100"/></a>
+                        <a href="../Returns%20a%20replacement/Returns%20a%20replacement.html"><img src="../picture/退货换货.png" height="50" width="100"/></a>
+                        <a href="../policy/policy.html" target="_blank"><img src="../picture/相关政策.png" height="50" width="100"/></a>
+                        <a href="../Common%20problems/Common%20problems.html" target="_blank"><img src="../picture/常见问题.png" height="50" width="100"/></a>
+                        <a href="../Contact%20us/Contact%20us.html" target="_blank"><img src="../picture/联系我们.png" height="50" width="100"/></a>
+                        <a href="../join%20us/join%20us.html" target="_blank"><img src="../picture/加入我们.png" height="50" width="100"/></a>
+
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="menu-bar">
+        <ul>
+            <li id="122" onmouseenter="disappear()"onmouseleave="appear()">
+                <p class="p1">商城</p>
+                <ul>
+                    <li>
+                        <br>
+                        <h5 style="font-size: 15px" class="h">剪刀类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刀类</h5>
+                        <h6 style="font-size: 13px"><a href="../羊毛剪/羊毛剪.html"target="_blank">羊毛剪</a><img src="../picture/羊毛剪.png" height="400" width="500" class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Meat%20cleaver.html" target="_blank">切肉刀</a><img src="../picture/切肉刀.png" class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../office/office.html"target="_blank">办公剪</a><img src="../picture/办公剪导航.png" height="400" width="500"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Boning%20knife.html" target="_blank">剔骨刀</a><img src="../picture/剔肉刀.png" class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../学生剪/学生剪.html" target="_blank">学生剪</a><img src="../picture/学生剪刀.png" height="400" width="500" class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Bread%20knife.html"target="_blank">面包刀</a><img src="../picture/面包刀.png"class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../garden/garden.html" target="_blank">园林剪</a><img src="../picture/园林剪.png"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Vegetable%20knife.html"target="_blank">蔬菜刀</a><img src="../picture/蔬菜刀.png" height="400" width="500"class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../tailor/tailo.html" target="_blank">裁缝剪</a><img src="../picture/裁缝剪.png"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/A%20small%20knife.html"target="_blank">小切刀</a><img src="../picture/小切刀.png" height="400" width="500" class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../household/household.html"target="_blank">家用剪</a><img src="../picture/家用剪刀.png"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Paring%20knife.html"target="_blank">削皮刀</a><img src="../picture/削皮刀.png"class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../hair/hair.html" target="_blank">美发剪</a><img src="../picture/美发剪.png" height="400" width="500"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Steak%20knife.html"target="_blank">牛排刀</a><img src="../picture/牛排刀.png"class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../铁皮剪/铁皮剪.html" target="_blank">铁皮剪</a><img src="../picture/铁皮剪.png" height="400" width="500"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/fruit%20knife.html"target="_blank">水果刀</a><img src="../picture/水果刀.png"class="imgC"/>
+                        </h6>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="menu-bar">
+        <ul>
+            <li>
+                <p class="p2">新系列</p>
+                <ul>
+                    <li class="img3">
+                        <!--<div class="img3">-->
+                        <a href="index2.html"><img src="../picture/山特维克多用刀.png" height="30%" width="30%"/></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a><img src="../picture/套刀.png"height="30%" width="30%"/></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a><img src="../picture/鎏金剪.png" width="30%" height="30%"/></a>
+                        <!--</div>-->
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <div>
+        <a href="../find/find.html" target="_blank"><p style="color: dimgrey" class="p3">发现</p></a>
+    </div>
+    <div class="img4">
+        <a href="../index2/index2.html"><img src="../picture/SHARP.png" height="60%" width="60%"/></a>
+    </div>
+    <div>
+        <a href="../Login/login.html" target="_blank"><p class="p4">登录</p></a>
+        <a href="../Register/register.html" target="_blank"><p class="p5">注册</p></a>
+        <a href="../CN/cn.html/" target="_blank"><p class="p6">CN/RMB</p></a>
+        <a href="../search/search.html" target="_blank" class="img5"><img src="../picture/search.png" height="20" width="20"/></a>
+        <a href="../favourite/favourite.html"target="_blank" class="img6"><img src="../picture/favorites.png" height="20" width="22.3"/></a>
+        <a href="../shopping%20cart/shopping%20cart.html"target="_blank" class="img7"><img src="../picture/_购物车.png" height="30" width="30"/> </a>
+    </div>
+</header>
+<div>
+<aside class="div1" id="2">
+    <div class="h1">
+        <h1 class="h2">羊毛剪</h1>
+        <img src="../picture/横线.png"  width="200" class="img8"/>
+    </div>
+    <div>
+        <div class="div3">类别</div>
+        <img src="../picture/横线.png"  width="200" class="img9"/>
+        <div class="div4">
+            <input name="wool" type="checkbox" value="" style="margin-left:19px;"><a> 羊毛剪</a><br>
+            <input name="office" type="checkbox" value="" style="margin-left:19px;"class="input1"><a> 办公剪</a><br>
+            <input name="student" type="checkbox" value="" style="margin-left:19px;"class="input1"><a> 学生剪</a><br>
+            <input name="garden" type="checkbox" value="" style="margin-left:19px;"class="input1"><a> 园林剪</a><br>
+            <input name="tailor" type="checkbox" value="" style="margin-left:19px;"class="input1"><a> 裁缝剪</a><br>
+            <input name="household" type="checkbox" value="" style="margin-left:19px;"class="input1"><a> 家用剪</a><br>
+            <input name="hair" type="checkbox" value="" style="margin-left:19px;"class="input1"><a> 美发剪</a><br>
+            <input name="iron" type="checkbox" value="" style="margin-left:19px;"class="input1"><a> 铁皮剪</a>
+
+        </div>
+    </div>
+    <div>
+        <img src="../picture/横线.png"  width="200" class="img10"/>
+        <div class="div5">颜色</div>
+        <img src="../picture/横线.png"  width="200" class="img11"/>
+    </div>
+    <div class="div6">
+        <img src="../picture/white.png"  width="40"/>
+         <img src="../picture/yellow.png"  width="40"/>
+        <img src="../picture/green.png"  width="40"/>
+        <img src="../picture/blue.png"  width="40"/>
+        <img src="../picture/red.png"  width="40"/>
+       <img src="../picture/orange.png" width="40"/>
+        <img src="../picture/purple.png"  width="40"/>
+        <img src="../picture/black.png" width="40"/>
+    </div>
+    <div>
+        <img src="../picture/横线.png"  width="200" class="img12"/>
+    </div>
+    <div class="div7">尺寸</div>
+<div>
+    <img src="../picture/横线.png"  width="200" class="img13"/>
+</div>
+    <div class="div4">
+        <input name="6寸" type="checkbox" value="" style="margin-left:19px;"><a> 6.0寸</a><br>
+        <input name="9寸" type="checkbox" value="" style="margin-left:19px;"><a> 9.0寸</a><br>
+        <input name="10寸" type="checkbox" value="" style="margin-left:19px;"><a> 10.0寸</a><br>
+        <input name="12寸" type="checkbox" value="" style="margin-left:19px;"><a> 12.0寸</a><br>
+        <input name="15寸" type="checkbox" value="" style="margin-left:19px;"><a> 15.0寸</a><br>
+        <input name="20寸" type="checkbox" value="" style="margin-left:19px;"><a> 20.0寸</a><br>
+    </div>
+</aside>
+    <div id="div9" class="div9">
+        <input type="text" value="      排序方式 ：  "class="input2" id="sort">
+        <img src="../picture/下拉.png"  width="20"class="img14" id="img14" onclick="change1()"style="cursor: pointer"/>
+        <img src="../picture/上拉.png"  width="20"class="img15" id="img15"onclick="change2()"style="cursor: pointer"/>
+        <div class="div8" id="div8">
+            &nbsp;&nbsp;&nbsp; &nbsp;<span id="span1" style="cursor: pointer"onclick="lateset()">最新</span><br>
+            &nbsp;&nbsp;&nbsp; &nbsp;<span id="span2" style="cursor: pointer"onclick="topeva()">评价</span><br>
+            &nbsp;&nbsp;&nbsp; &nbsp;<span id="span3" style="cursor: pointer" onclick="desorder()">价格 ↓</span><br>
+            &nbsp;&nbsp;&nbsp; &nbsp;<span id="span4"style="cursor: pointer"onclick="ascorder()">价格 ↑</span>
+        </div>
+       <div>
+        <div id="special">
+            <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+            <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+            <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+            <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+            <br>
+            <a class="a1">2 色</a>
+            <a class="a2">★★★★☆</a>
+            <a class="a1">2 色</a>
+            <a class="a2">★★★★☆</a>
+            <a class="a1">2 色</a>
+            <a class="a2">★★★★☆</a>
+            <a class="a1">2 色</a>
+            <a class="a2">★★★★☆</a>
+            <img src="../picture/横线.png"  width="240" class="img16"style="margin-left: -252px"/>
+            <img src="../picture/横线.png"  width="240" class="img16" style="margin-left: -555px"/>
+            <img src="../picture/横线.png"  width="240" class="img16" style="margin-left: -861px;"/>
+            <img src="../picture/横线.png"  width="240" class="img16" style="margin-left: -1165px;"/>
+            <br>
+            <a class="a3"style="margin-left: 50px">
+                戈麦斯羊毛剪
+            </a>
+            <a class="a3"style="margin-left:220px">
+                戈麦斯羊毛剪
+            </a>
+            <a class="a3"style="margin-left: 220px">
+                戈麦斯羊毛剪
+            </a>
+            <a class="a3"style="margin-left: 220px">
+                戈麦斯羊毛剪
+            </a>
+                <br>
+            <a class="a3">
+                ￥99.99
+               <a style="margin-left: 150px;cursor: pointer">
+                   <img src="../picture/喜欢.png" width="17"id="fav1"onclick="clickimg()"name="fav1"/>
+               </a>
+                <a><img src="../picture/购物车.png"id="shopcar"name="shopcar" width="17" style="margin-left: 10px;cursor: pointer"onclick="clickimg2()"/></a>
+            </a>
+            <a class="a3" style="margin-left: 46px;">
+                ￥99.99
+                <a style="margin-left: 150px;"><img src="../picture/喜欢.png" width="17"/></a>
+                <a><img src="../picture/购物车.png" width="17" style="margin-left: 10px"/></a>
+            </a>
+            <a class="a3" style="margin-left: 46px;">
+                ￥99.99
+                <a style="margin-left: 150px;"><img src="../picture/喜欢.png" width="17"/></a>
+                <a><img src="../picture/购物车.png" width="17" style="margin-left: 10px"/></a>
+            </a>
+            <a class="a3" style="margin-left: 50px;">
+            ￥99.99
+                <a style="margin-left: 150px;"><img src="../picture/喜欢.png" width="17"/></a>
+                <a><img src="../picture/购物车.png" width="17" style="margin-left: 10px"/></a>
+        </a>
+           <div>
+               <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+               <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+               <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+               <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+               <br>
+               <a class="a1">2 色</a>
+               <a class="a2">★★★★☆</a>
+               <a class="a1">2 色</a>
+               <a class="a2">★★★★☆</a>
+               <a class="a1">2 色</a>
+               <a class="a2">★★★★☆</a>
+               <a class="a1">2 色</a>
+               <a class="a2">★★★★☆</a>
+               <img src="../picture/横线.png"  width="240" class="img16"style="margin-left: -252px"/>
+               <img src="../picture/横线.png"  width="240" class="img16" style="margin-left: -555px"/>
+               <img src="../picture/横线.png"  width="240" class="img16" style="margin-left: -861px;"/>
+               <img src="../picture/横线.png"  width="240" class="img16" style="margin-left: -1165px;"/>
+               <br>
+               <a class="a3"style="margin-left: 50px">
+                   戈麦斯羊毛剪
+               </a>
+               <a class="a3"style="margin-left:220px">
+                   戈麦斯羊毛剪
+               </a>
+               <a class="a3"style="margin-left: 220px">
+                   戈麦斯羊毛剪
+               </a>
+               <a class="a3"style="margin-left: 220px">
+                   戈麦斯羊毛剪
+               </a>
+               <br>
+               <a class="a3">
+                   ￥99.99
+                   <a style="margin-left: 150px;"><img src="../picture/喜欢.png" width="17"/></a>
+                   <a><img src="../picture/购物车.png" width="17" style="margin-left: 10px"/></a>
+               </a>
+               <a class="a3" style="margin-left: 46px;">
+                   ￥99.99
+                   <a style="margin-left: 150px;"><img src="../picture/喜欢.png" width="17"/></a>
+                   <a><img src="../picture/购物车.png" width="17" style="margin-left: 10px"/></a>
+               </a>
+               <a class="a3" style="margin-left: 46px;">
+                   ￥99.99
+                   <a style="margin-left: 150px;"><img src="../picture/喜欢.png" width="17"/></a>
+                   <a><img src="../picture/购物车.png" width="17" style="margin-left: 10px"/></a>
+               </a>
+               <a class="a3" style="margin-left: 50px;">
+                   ￥99.99
+                   <a style="margin-left: 150px;"><img src="../picture/喜欢.png" width="17"/></a>
+                   <a><img src="../picture/购物车.png" width="17" style="margin-left: 10px"/></a>
+               </a>
+           </div>
+           <div>
+               <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+               <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+               <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+               <img src="../picture/羊毛剪.png" width="240" class="div10"/>
+               <br>
+               <a class="a1">2 色</a>
+               <a class="a2">★★★★☆</a>
+               <a class="a1">2 色</a>
+               <a class="a2">★★★★☆</a>
+               <a class="a1">2 色</a>
+               <a class="a2">★★★★☆</a>
+               <a class="a1">2 色</a>
+               <a class="a2">★★★★☆</a>
+               <img src="../picture/横线.png"  width="240" class="img16"style="margin-left: -252px"/>
+               <img src="../picture/横线.png"  width="240" class="img16" style="margin-left: -555px"/>
+               <img src="../picture/横线.png"  width="240" class="img16" style="margin-left: -861px;"/>
+               <img src="../picture/横线.png"  width="240" class="img16" style="margin-left: -1165px;"/>
+               <br>
+               <a class="a3"style="margin-left: 50px">
+                   戈麦斯羊毛剪
+               </a>
+               <a class="a3"style="margin-left:220px">
+                   戈麦斯羊毛剪
+               </a>
+               <a class="a3"style="margin-left: 220px">
+                   戈麦斯羊毛剪
+               </a>
+               <a class="a3"style="margin-left: 220px">
+                   戈麦斯羊毛剪
+               </a>
+               <br>
+               <a class="a3">
+                   ￥99.99
+                   <a style="margin-left: 150px;"><img src="../picture/喜欢.png" width="17"/></a>
+                   <a><img src="../picture/购物车.png" width="17" style="margin-left: 10px"/></a>
+               </a>
+               <a class="a3" style="margin-left: 46px;">
+                   ￥99.99
+                   <a style="margin-left: 150px;"><img src="../picture/喜欢.png" width="17"/></a>
+                   <a><img src="../picture/购物车.png" width="17" style="margin-left: 10px"/></a>
+               </a>
+               <a class="a3" style="margin-left: 46px;">
+                   ￥99.99
+                   <a style="margin-left: 150px;"><img src="../picture/喜欢.png" width="17"/></a>
+                   <a><img src="../picture/购物车.png" width="17" style="margin-left: 10px"/></a>
+               </a>
+               <a class="a3" style="margin-left: 50px;">
+                   ￥99.99
+                   <a style="margin-left: 150px;"><img src="../picture/喜欢.png" width="17"/></a>
+                   <a><img src="../picture/购物车.png" width="17" style="margin-left: 10px"/></a>
+               </a>
+           </div>
+       </div>
+    </div>
+</div>
+<footer id="footer1">
+    <div class="img17">
+        <a href="../about%20sharp/about%20sharp.html" target="_blank"><img src="../picture/关于Sharp.png" height="50" width="100"/></a>
+        <a href="../Logistics%20information/Logistics%20information.html"target="_blank"><img src="../picture/物流信息.png" height="50" width="100"/></a>
+        <a href="../order%20status/order%20status.html"target="_blank"><img src="../picture/订单状态.png" height="50" width="100"/></a>
+        <a href="../Returns%20a%20replacement/Returns%20a%20replacement.html"target="_blank"><img src="../picture/退货换货.png" height="50" width="100"/></a>
+        <a href="../policy/policy.html"target="_blank"><img src="../picture/相关政策.png" height="50" width="100"/></a>
+        <a href="../Common%20problems/Common%20problems.html"target="_blank"><img src="../picture/常见问题.png" height="50" width="100"/></a>
+        <a href="../Contact%20us/Contact%20us.html"target="_blank"><img src="../picture/联系我们.png" height="50" width="100"/></a>
+        <a href="../join%20us/join%20us.html"target="_blank"><img src="../picture/加入我们.png" height="50" width="100"/></a>
+    </div>
+    <p class="p7">订阅Sharp最新动态</p>
+    <form action="" method="get" style="height: 100px">
+        <div class="relative1">
+            <input type="text" name="email" size="56" maxlength="24" value=" Email.." style="color: darkgray ;height: 30px ;width: 350px;border-color: black;"id="sub"onclick="clearme1()">
+        </div>
+        <div class="relative2">
+            <input type="button" value="订阅" style="height: 38px;width: 70px ;background: #1f1a1a;color: #FFFFFF;font-weight: bold;border: none;border-color: black"id="sub1"onclick="sub11()">
+        </div>
+        <div class="img18">
+            <a href="https://weixin.qq.com/" target="_blank"> <img src="../picture/微信.png" height="30" width="30"/></a>
+            <a href="https://weibo.com/" target="_blank"> <img src="../picture/微博.png" height="30" width="30"/></a>
+            <a href="http://www.tui-te.com/" target="_blank">    <img src="../picture/twitter新.png" height="30" width="30"/></a>
+            <a href="https://m.facebook.com/" target="_blank">    <img src="../picture/Facebook.png" height="30" width="30"/></a>
+            <a href="http://instagram.com/" target="_blank">   <img src="../picture/ins新.png" height="30" width="30"/></a>
+        </div>
+    </form>
+</footer>
+</div>
+</body>
+<script>
+    var a=document.getElementById("header1");
+    var b=document.getElementById("2");
+    var c=document.getElementById("div9");
+    var d=document.getElementById("footer1");
+    function disappear() {
+        b.style.display="none";
+        c.style.display="none";
+        d.style.display="none";
+        a.style.borderBottomColor="#ffffff00";
+    }
+    function appear() {
+        b.style.display="block";
+        c.style.display="block";
+        d.style.display="block";
+        a.style.borderBottomColor="#9e9e9e45";
+    }
+
+
+
+</script>
+<script>
+    function change1() {
+        var b=document.getElementById("img15");
+        var a=document.getElementById("img14");
+        var c=document.getElementById("div8");
+        var w1=document.getElementById("special");
+        var w2=document.getElementById("2")
+        var w3=document.getElementById("div9")
+        w1.style.marginTop="83px";
+        w2.style.height="1120px";
+        w3.style.height="1120px";
+        b.style.display="block";
+        a.style.display="none";
+        c.style.display="block";
+    }
+    function change2() {
+        var b=document.getElementById("img15");
+        var a=document.getElementById("img14");
+        var c=document.getElementById("div8");
+        var w1=document.getElementById("special");
+        var w2=document.getElementById("2")
+        var w3=document.getElementById("div9")
+        w1.style.marginTop="0";
+        w2.style.height="1070px";
+        w3.style.height="1070px";
+        b.style.display="none";
+        a.style.display="block";
+        c.style.display="none";
+    }
+    function lateset() {
+        var b=document.getElementById("sort");
+        var a=document.getElementById("div8");
+        var d=document.getElementById("img15");
+        var c=document.getElementById("img14");
+        var w1=document.getElementById("special");
+        var w2=document.getElementById("2")
+        var w3=document.getElementById("div9")
+        w1.style.marginTop="0";
+        w2.style.height="1070px";
+        w3.style.height="1070px";
+        b.value="      排序方式 ：最新";
+        a.style.display="none";
+        d.style.display="none";
+        c.style.display="block";
+    }
+    function topeva() {
+        var a=document.getElementById("sort");
+        var d=document.getElementById("img15");
+        var c=document.getElementById("img14");
+        var e=document.getElementById("div8");
+        var w1=document.getElementById("special");
+        var w2=document.getElementById("2")
+        var w3=document.getElementById("div9")
+        w1.style.marginTop="0";
+        w2.style.height="1070px";
+        w3.style.height="1070px";
+        e.style.display="none";
+
+        a.value="      排序方式 ：评价"
+        d.style.display="none";
+        c.style.display="block";
+    }
+    function desorder() {
+        var a=document.getElementById("sort");
+        var d=document.getElementById("img15");
+        var c=document.getElementById("img14");
+        var e=document.getElementById("div8");
+        var w1=document.getElementById("special");
+        var w2=document.getElementById("2")
+        var w3=document.getElementById("div9")
+        w1.style.marginTop="0";
+        w2.style.height="1070px";
+        w3.style.height="1070px";
+        e.style.display="none";
+        a.value="    排序方式 ：价格  ↓"
+        d.style.display="none";
+        c.style.display="block";
+    }
+    function ascorder() {
+        var a=document.getElementById("sort");
+        var d=document.getElementById("img15");
+        var c=document.getElementById("img14");
+        var e=document.getElementById("div8");
+        var w1=document.getElementById("special");
+        var w2=document.getElementById("2")
+        var w3=document.getElementById("div9")
+        w1.style.marginTop="0";
+        w2.style.height="1070px";
+        w3.style.height="1070px";
+        e.style.display="none";
+        a.value="    排序方式 ：价格  ↑";
+        d.style.display="none";
+        c.style.display="block";
+    }
+
+</script>
+<script>
+    function clickimg() {
+        var a=document.getElementById("fav1");
+        if(a.name=="fav1"){
+            a.src="../picture/喜欢_color.png";
+            a.name="fav2";
+        }else{
+            a.src="../picture/喜欢.png";
+            a.name="fav1";
+        }
+    }
+    function clickimg2() {
+        var a=document.getElementById("shopcar");
+        if(a.name=="shopcar"){
+            a.src="../picture/购物车_+.png";
+            a.name="shopcar2";
+        }else{
+            a.src="../picture/购物车.png";
+            a.name="shopcar";
+        }
+    }
+
+</script>
+</html>

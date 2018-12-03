@@ -1,0 +1,52 @@
+<div class="div1">
+    <input type="text" class="input4"id="inputbox">
+</div>
+<div class="div11">
+    <a>
+        <input type="button" value="Search Now！" class="input3" style="cursor: pointer" id="searchbtn" onmouseenter="move()"onmouseleave="leave()">
+    </a>
+    <div id="result">
+
+    </div>
+</div>
+<script type="text/javascript">
+    (function() {
+
+        var httpRequest;
+        //Ajax POST File
+        document.getElementById("searchbtn").onclick = function() {
+            var id = document.getElementById("inputbox").value;
+            makeRequest3('search',id);
+        };
+
+        function makeRequest3(url,id) {
+            httpRequest = new XMLHttpRequest();
+
+            if (!httpRequest) {
+                alert('Giving up :( Cannot create an XMLHTTP instance');
+                return false;
+            }
+            httpRequest.onreadystatechange = alertContents3;
+            httpRequest.open('POST', url);
+            httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            httpRequest.send('id=' + encodeURIComponent(id));
+        }
+
+        function alertContents3() {
+            if (httpRequest.readyState === XMLHttpRequest.DONE) {
+                if (httpRequest.status === 200) {
+                    var response = JSON.parse(httpRequest.responseText);
+                    // alert(response.computedString);
+                    var worklist=" ";
+                    for(var index=0;index<response.count;index++)
+                    {
+                        worklist+='<p>'+response.id1[index].id+'</p>';
+                    }
+                    document.getElementById("result").innerHTML=worklist;
+                } else {
+                    alert('There was a problem with the request.');
+                }
+            }
+        }
+    })();
+</script>

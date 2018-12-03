@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+    <script>
+        var newsList=['WEB程序设计基础','数据结构','商业摄影','二维动画制作','三维图形学'];
+        var clickme=function (){
+
+            var inputCount=document.getElementById
+            ('count');
+            if (inputCount.value===''){
+                alert('关键字不能为空');
+                return;
+            }
+            var result='';
+            for(var course=0;course<newsList.length;course++){
+                if (newsList[course].indexOf(inputCount.value)>=0)
+                    result+='<p>'+newsList[course]+'</p>';
+            }
+            if(result===''){
+                result='<h1>查无此课</h1>'
+            }
+            var currentDiv = document.getElementById("result");
+            currentDiv.innerHTML=result;
+        }
+    </script>
+</head>
+<body>
+
+<!--form会重新加载页面-->
+<div id="form" >
+    请输入搜索关键字<input id="count" type="text" value="">
+    <br>
+    <button  onclick="clickme();">搜索</button>
+</div>
+<div id="result">
+
+</div>
+<script>
+    var result='';
+    for(var course=0;course<newsList.length;course++){
+        result+='<p>'+newsList[course]+'</p>';
+    }
+    var currentDiv = document.getElementById("result");
+    currentDiv.innerHTML=result;
+
+</script>
+
+</body>
+
+
+</html>

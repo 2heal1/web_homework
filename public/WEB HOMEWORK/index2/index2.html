@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+    <script>
+        timer=setInterval(function () {
+            //换图
+            var images=document.getElementById("7");
+            var index=Math.random()*3;
+            var imageIndex=parseInt(index)+7;
+            images.src='../picture/'+imageIndex+'.png';
+            // images.style.height=90+'%';
+            images.style.width=400+'px';
+
+            images.name=imageIndex;
+        },3000);
+        var href=function () {
+            var images=document.getElementById("7");
+            if(images.name=="7")
+                window.open("https://www.baidu.com/");
+            else if(images.name=="8")
+                window.open("http://xyq.163.com/");
+            else if(images.name=="9")
+                window.open("http://www.qq.com/");
+        }
+        var container = document.getElementsByClassName("play3");
+        container.onmouseenter = function () {
+            clearInterval(timer);
+        }
+        container.onmouseleave = function () {
+            autoPlay();
+        }
+    </script>
+    <script>
+        setInterval(function () {
+            //换图
+            var images=document.getElementById("1");
+            var index=Math.random()*3;
+            var imageIndex=parseInt(index)+1;
+            images.src='../picture/'+imageIndex+'.png';
+            // images.style.height=80+'%';
+            images.style.width=400+'px';
+
+            images.name=imageIndex;
+        },3000);
+        var href=function () {
+            var images=document.getElementById("1");
+            if(images.name=="1")
+                window.open("https://www.baidu.com/");
+            else if(images.name=="2")
+                window.open("http://xyq.163.com/");
+            else if(images.name=="3")
+                window.open("http://www.qq.com/");
+        }
+    </script>
+    <script>
+        setInterval(function () {
+            //换图
+            var images=document.getElementById("4");
+            var index=Math.random()*3;
+            var imageIndex=parseInt(index)+4;
+            images.src='../picture/'+imageIndex+'.png';
+            // images.style.height=80+'%';
+            images.style.width=400+'px';
+
+            images.name=imageIndex;
+        },3000);
+        var href=function () {
+            var images=document.getElementById("4");
+            if(images.name=="4")
+                window.open("https://www.baidu.com/");
+            else if(images.name=="5")
+                window.open("http://xyq.163.com/");
+            else if(images.name=="6")
+                window.open("http://www.qq.com/");
+        }
+    </script>
+    <script>
+        function clearme1() {
+            var b=document.getElementById("sub");
+            if(b.value==" Email..")
+            {
+                b.value=" ";
+            }
+
+        }
+
+    </script>
+    <script>
+       function sub11() {
+        var a=document.getElementById("sub1");
+        var b=document.getElementById("sub");
+        if(b.value==" Email.."||b.value==" ")
+        {
+            alert("订阅邮箱不能为空！");
+        }
+        else
+        {
+            alert("订阅成功！");
+        }
+       }
+    </script>
+    <style type="text/css">
+        div.menu-bar ul ul {
+            display: none;
+        }
+
+        div.menu-bar li:hover ul {
+            display: block;
+        }
+        .h a{
+            color: bisque;
+            font-size: large;
+        }
+        .imgC {
+            position: absolute;
+            left: 700px;
+            top: 70px;
+            display: none;
+        }
+        a:hover +.imgC {
+            display: block;
+        }
+        ul li{
+            list-style-type:none;
+            z-index:0
+        }
+        .img1{
+            position: absolute;
+            border: 0px;
+            padding: 0px;
+            margin-left: -45px;
+            margin-top:-4px ;
+
+        }
+        li{
+            width: 500px;
+            margin: 0px;
+        }
+        ul{
+            margin: 0px;
+        }
+        .img2{
+            position: absolute;
+            margin-left: -70px;
+            margin-top: 10px;
+        }
+        .img2 img:hover{
+            transform: scale(1.05);
+            cursor: default;
+            filter:alpha(Opacity=80);
+            -moz-opacity:0.8;
+            opacity: 0.8;
+        }
+        .img2 img{
+            cursor: pointer;
+            transition: all 0.6s;
+
+        }
+        .img3{
+            position: absolute;
+            left: 185px;
+            top: 45px;
+            width: 1300px;
+            z-index: 0;
+        }
+        .img3 img:hover{
+            transform: scale(1.05);
+            cursor: default;
+            filter:alpha(Opacity=80);
+            -moz-opacity:0.8;
+            opacity: 0.8;
+        }
+        .img3 img{
+            cursor: pointer;
+            transition: all 0.6s;
+
+        }
+        .img4{
+            position: absolute;
+            left: 698px;
+            top: -5px;
+        }
+        .img5{
+            position: absolute;
+            left: 1380px;
+            top: 1px;
+        }
+        .img6{
+            position: absolute;
+            left: 1430px;
+            top: 1px;
+        }
+        .img7{
+            position: absolute;
+            left: 1480px;
+            top: -5px;
+        }
+        .img8{
+            position: absolute;
+            margin-top: 80px;
+            /*margin-left: 10px;*/
+            width: 1500px;
+            z-index:-1
+        }
+        .img8 img:hover{
+            transform: scale(1.05);
+            cursor: default;
+            filter:alpha(Opacity=80);
+            -moz-opacity:0.8;
+            opacity: 0.8;
+        }
+        .img8 img{
+            cursor: pointer;
+            transition: all 0.6s;
+
+        }
+        .img9{
+            position: absolute;
+            top: 1200px;
+            left:40px;
+            width: 500px;
+            z-index:0
+        }
+        .img9 img:hover{
+            transform: scale(1.05);
+            cursor: default;
+            filter:alpha(Opacity=80);
+            -moz-opacity:0.8;
+            opacity: 0.8;
+        }
+        .img9 img{
+            cursor: pointer;
+            transition: all 0.6s;
+
+        }
+        .img10{
+            position: absolute;
+            top: 1300px;
+            left:950px;
+            z-index:0
+        }
+        .img10 img:hover{
+            transform: scale(1.05);
+            cursor: default;
+            filter:alpha(Opacity=80);
+            -moz-opacity:0.8;
+            opacity: 0.8;
+        }
+        .img10 img{
+            cursor: pointer;
+            transition: all 0.6s;
+
+        }
+        .p1{
+            position: absolute;
+            left: 80px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p2{
+            position: absolute;
+            left: 140px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p3{
+            position: absolute;
+            left: 220px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p4{
+            position: absolute;
+            left: 1100px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p5{
+            position: absolute;
+            left: 1150px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p6{
+            position: absolute;
+            left: 1250px;
+            top: -23px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: dimgrey;
+        }
+        .p7{
+            position: absolute;
+            left: 950px;
+            top: 1180px;
+            font-weight: bolder;
+            font-size: 21px;
+            color: black;
+        }
+        .relative1{
+            position: absolute;
+            left: 950px;
+            top: 1250px;
+
+        }
+        .relative2{
+            position: absolute;
+            left: 1240px;
+            top: 1249px;
+        }
+        a:hover{
+            color: darkgray;
+        }
+        a{
+            color: #1f1a1a;
+            text-decoration: none;
+        }
+        .play{
+            position: absolute;
+            top: 650px;
+            left: 50px;
+        }
+        .play2{
+            position: absolute;
+            top: 650px;
+            left: 600px;
+        }
+        .play3{
+            position: absolute;
+            top: 650px;
+            left: 1100px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="menu-bar">
+        <ul>
+            <li>
+                <a class="img1"> <img src="../picture/展开.png" height="20" width="20"/></a>
+                <ul>
+                    <li class="img2">
+                        <a href="../about%20sharp/about%20sharp.html" target="_blank"><img src="../picture/关于Sharp.png" height="50" width="100"/></a>
+                        <a href="../Logistics%20information/Logistics%20information.html" target="_blank"><img src="../picture/物流信息.png" height="50" width="100"/></a>
+                        <a href="../order%20status/order%20status.html" target="_blank"><img src="../picture/订单状态.png" height="50" width="100"/></a>
+                        <a href="../Returns%20a%20replacement/Returns%20a%20replacement.html"><img src="../picture/退货换货.png" height="50" width="100"/></a>
+                        <a href="../policy/policy.html" target="_blank"><img src="../picture/相关政策.png" height="50" width="100"/></a>
+                        <a href="../Common%20problems/Common%20problems.html" target="_blank"><img src="../picture/常见问题.png" height="50" width="100"/></a>
+                        <a href="../Contact%20us/Contact%20us.html" target="_blank"><img src="../picture/联系我们.png" height="50" width="100"/></a>
+                        <a href="../join%20us/join%20us.html" target="_blank"><img src="../picture/加入我们.png" height="50" width="100"/></a>
+
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="menu-bar">
+        <ul>
+            <li>
+                <p class="p1">商城</p>
+                <ul>
+                    <li>
+                        <br>
+                        <h5 style="font-size: 15px" class="h">剪刀类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刀类</h5>
+                        <h6 style="font-size: 13px"><a href="../羊毛剪/羊毛剪.html"target="_blank">羊毛剪</a><img src="../picture/羊毛剪.png" height="400" width="500" class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Meat%20cleaver.html" target="_blank">切肉刀</a><img src="../picture/切肉刀.png" class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../office/office.html"target="_blank">办公剪</a><img src="../picture/办公剪导航.png" height="400" width="500"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Boning%20knife.html" target="_blank">剔骨刀</a><img src="../picture/剔肉刀.png" class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../学生剪/学生剪.html" target="_blank">学生剪</a><img src="../picture/学生剪刀.png" height="400" width="500" class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Bread%20knife.html"target="_blank">面包刀</a><img src="../picture/面包刀.png"class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../garden/garden.html" target="_blank">园林剪</a><img src="../picture/园林剪.png"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Vegetable%20knife.html"target="_blank">蔬菜刀</a><img src="../picture/蔬菜刀.png" height="400" width="500"class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../tailor/tailo.html" target="_blank">裁缝剪</a><img src="../picture/裁缝剪.png"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/A%20small%20knife.html"target="_blank">小切刀</a><img src="../picture/小切刀.png" height="400" width="500" class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../household/household.html"target="_blank">家用剪</a><img src="../picture/家用剪刀.png"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Paring%20knife.html"target="_blank">削皮刀</a><img src="../picture/削皮刀.png"class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../hair/hair.html" target="_blank">美发剪</a><img src="../picture/美发剪.png" height="400" width="500"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/Steak%20knife.html"target="_blank">牛排刀</a><img src="../picture/牛排刀.png"class="imgC"/>
+                        </h6>
+                        <h6 style="font-size: 13px"><a href="../铁皮剪/铁皮剪.html" target="_blank">铁皮剪</a><img src="../picture/铁皮剪.png" height="400" width="500"class="imgC"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../knife/fruit%20knife.html"target="_blank">水果刀</a><img src="../picture/水果刀.png"class="imgC"/>
+                        </h6>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="menu-bar">
+        <ul>
+            <li>
+                <p class="p2">新系列</p>
+                <ul>
+                    <li class="img3">
+                        <!--<div class="img3">-->
+                        <a href="index2.html"><img src="../picture/山特维克多用刀.png" height="30%" width="30%"/></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a><img src="../picture/套刀.png"height="30%" width="30%"/></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a><img src="../picture/鎏金剪.png" width="30%" height="30%"/></a>
+                        <!--</div>-->
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <div>
+        <a href="../find/find.html" target="_blank"><p style="color: dimgrey" class="p3">发现</p></a>
+    </div>
+    <div class="img4">
+        <a href="index2.html"><img src="../picture/SHARP.png" height="60%" width="60%"/></a>
+    </div>
+    <div>
+        <a href="../Login/login.html" target="_blank"><p class="p4">登录</p></a>
+        <a href="../Register/register.html" target="_blank"><p class="p5">注册</p></a>
+        <a href="../CN/cn.html/" target="_blank"><p class="p6">CN/RMB</p></a>
+        <a href="../search/search.html" target="_blank" class="img5"><img src="../picture/search.png" height="20" width="20"/></a>
+        <a href="../favourite/favourite.html"target="_blank" class="img6"><img src="../picture/favorites.png" height="20" width="22.3"/></a>
+        <a href="../shopping%20cart/shopping%20cart.html"target="_blank" class="img7"><img src="../picture/_购物车.png" height="30" width="30"/> </a>
+    </div>
+</header>
+<article class="img8">
+    <a style="margin-left: 7.5px"><img src="../picture/p1.png"width="30%" height="30%"/></a>
+    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+    <a style="margin-left: 140px" ><img src="../picture/花艺剪.png"width="20%" height="20%"/></a>
+    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+    <a style="margin-left: 140px"><img src="../picture/p2.png" width="30%" height="30%"/></a>
+</article>
+<aside>
+    <div style="position:absolute;z-index:-1;top: 555px;left: 0px" >
+        <img src="../picture/new arrival.png" height="500" width="1519"/>
+    </div>
+    <div class="play3">
+        <img width="400px" name="7" id='7' src="../picture/7.png" onclick="href();">
+    </div>
+    <div class="play">
+        <img  width="400px" name="1" id='1' src="../picture/1.png" onclick="href();">
+    </div>
+    <div class="play2">
+        <img width="400px"name="4" id='4' src="../picture/4.png" onclick="href();">
+    </div>
+
+</aside>
+<footer>
+    <div style="position:absolute;z-index:-1;top: 1155px;left: 0px" >
+        <img src="../picture/白图.png" height="300" width="1519"/>
+    </div>
+    <div class="img9">
+        <a href="../about%20sharp/about%20sharp.html" target="_blank"><img src="../picture/关于Sharp.png" height="50" width="100"/></a>
+        <a href="../Logistics%20information/Logistics%20information.html"target="_blank"><img src="../picture/物流信息.png" height="50" width="100"/></a>
+        <a href="../order%20status/order%20status.html"target="_blank"><img src="../picture/订单状态.png" height="50" width="100"/></a>
+        <a href="../Returns%20a%20replacement/Returns%20a%20replacement.html"target="_blank"><img src="../picture/退货换货.png" height="50" width="100"/></a>
+        <a href="../policy/policy.html"target="_blank"><img src="../picture/相关政策.png" height="50" width="100"/></a>
+        <a href="../Common%20problems/Common%20problems.html"target="_blank"><img src="../picture/常见问题.png" height="50" width="100"/></a>
+        <a href="../Contact%20us/Contact%20us.html"target="_blank"><img src="../picture/联系我们.png" height="50" width="100"/></a>
+        <a href="../join%20us/join%20us.html"target="_blank"><img src="../picture/加入我们.png" height="50" width="100"/></a>
+    </div>
+    <p class="p7">订阅Sharp最新动态</p>
+    <form action="" method="get" style="height: 100px">
+        <div class="relative1">
+            <input type="text" name="email" size="56" maxlength="24" value=" Email.." style="color: darkgray ;height: 30px ;width: 350px;border-color: black;"id="sub"onclick="clearme1()">
+        </div>
+        <div class="relative2">
+            <input type="button" value="订阅" style="height: 38px;width: 70px ;background: #1f1a1a;color: #FFFFFF;font-weight: bold;border: none;border-color: black"id="sub1"onclick="sub11()">
+        </div>
+        <div class="img10">
+            <a href="https://weixin.qq.com/" target="_blank"> <img src="../picture/微信.png" height="30" width="30"/></a>
+            <a href="https://weibo.com/" target="_blank"> <img src="../picture/微博.png" height="30" width="30"/></a>
+            <a href="http://www.tui-te.com/" target="_blank">    <img src="../picture/twitter新.png" height="30" width="30"/></a>
+            <a href="https://m.facebook.com/" target="_blank">    <img src="../picture/Facebook.png" height="30" width="30"/></a>
+            <a href="http://instagram.com/" target="_blank">   <img src="../picture/ins新.png" height="30" width="30"/></a>
+        </div>
+    </form>
+</footer>
+</body>
+</html>

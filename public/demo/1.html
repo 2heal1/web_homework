@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+<script src="vue.min.js"></script>
+    <script>
+        window.onload=function () {
+            var a=new Vue({
+                el:'#box',
+                data:{
+                    arr:['a','b','c'],
+                    json:{assd:'11',b:'2',c:'3'}
+                },
+                methods:{
+                    show1:function () {
+                        this.arr.push('tomato');
+                    }
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div id="box">
+  <ul>
+      <li v-for="(qwe,index) in arr">
+          {{qwe}}  {{index}}
+      </li>
+  </ul>
+    <ul>
+        <li v-for="(item,v2,a) in json">
+            {{item}} {{v2}} {{a}}
+        </li>
+    </ul>
+    <input type="button" v-on:dblclick="show1()">
+
+</div>
+</body>
+</html>

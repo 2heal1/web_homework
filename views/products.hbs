@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>products</title>
+    <link rel="stylesheet" type="text/css" href="../header.css">
+    <style>
+        .bcgcolor{
+            background-color:  #efefef73;
+            width: 1511px;
+            height: 600px;
+            margin-top: 80px;
+        }
+        .font1{
+            margin-top: -479px;
+            margin-left: 960px;
+            /* margin-right: 200px; */
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .button1{
+            font-size: 14px;
+            background-color: #ffffff00;
+            padding: 0;
+            border: 1px;
+        }
+        .size1{
+            font-size: 20px;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+        .addshopcar{
+            background-color: #f0f8ff00;
+            width: 220px;
+            font-weight: bold;
+            font-size: 30px;
+            border-radius: 14px;
+            height: 67px;
+        }
+    </style>
+    <script src='jquery-1.9.0.min.js'></script>
+    <script src='jquery.elevateZoom-3.0.8.min.js'></script>
+</head>
+<body>
+<form method="post"action="/insertshop">
+<div class="bcgcolor">
+    <br> <br> <br> <br> <br>
+    <!--缩列图 -->
+    <div style="margin-left: 60px;    margin-top: -29px;">
+        <div>
+            <a style="cursor: pointer" onclick="clicktu1()">
+                <img src="picture/1.png"width="100px"style="    border: 3px solid black;"id="tu1"/>
+            </a>
+        </div>
+        <br>
+        <div>
+            <a onclick="clicktu2()"style="cursor: pointer">
+                <img src="picture/平剪2.png"width="100px"style="    border: 3px solid black;"id="tu2"/>
+            </a>
+        </div>
+        <br>
+        <div>
+            <a style="cursor: pointer" onclick="clicktu3()">
+                <img src="picture/平剪3.png"width="100px"style="    border: 3px solid black;"id="tu3"/>
+            </a>
+        </div>
+        <br>
+        <div>
+            <a style="cursor: pointer" onclick="clicktu4()">
+                <img src="picture/平剪4.png"width="100px"style="    border: 3px solid black;"id="tu4"/>
+            </a>
+        </div>
+    </div>
+    <!--大图-->
+    <div style="margin-top:-463px;margin-left: 280px;">
+        <img src="picture/1.png"style="height:465px;border: 3px solid black"id="datu"data-zoom-image="./picture/1_large.png"/>
+    </div>
+    <div class="font1">
+        <div>平剪 6.0寸</div>
+        <div>Sold By Sharp</div>
+        <div style="font-size: 55px">Flat cut 6.0 inches</div>
+        <div style="font-size: 25px;font-weight: normal;margin-top: 25px">￥133
+        </div>
+        <div style="width:500px;border: 0.5px solid #72727233"></div>
+        <div class="size1"style="margin-left: 5px;">尺寸</div>
+        <div style="margin-top: -25px;margin-left: 7px;"><input type="button" value="6.0" class="button1"style="cursor: pointer;font-weight: bold;width: 25px;height: 25px"id="size1"onclick="changecolor()"></div>
+        <div style="width:500px;border: 0.5px solid #72727233"></div>
+        <div style="font-weight: normal;font-size: 20px;margin-top: 10px">
+            选择数量
+        </div>
+        <div style="margin-top: -30px"><input type="button"id="minus3" value="-" style="width: 20px;border: 1px solid;background-color: #f5deb300;height: 20px;text-align: center;cursor: pointer" onclick="jian2()"></div>
+        <div style="margin-top: -78.5px;margin-left: 20px;"><input type="text"id="content33" style="width: 28px;border: 1px solid;border-left: 0; height: 16px;border-right: 0;text-align: center;    background-color: #8b451300;"value="1"name="snum"></div>
+        <div style="margin-top: -79.5px;margin-left: 48px;"><input type="button"id="add34" value="+" style="width: 20px;border: 1px solid;background-color: #f5deb300;height: 20px;text-align: center;cursor: pointer"onclick="addnumber2()"></div>
+        <div style="margin-left: -4px;margin-top: -11px;"><input type="submit" value="加入购物车"class="addshopcar"style="cursor: pointer"id="addto"></div>
+    </div>
+</div>
+<footer style="    margin-top: -1120px;position: absolute;margin-left: 76px;"id="footer_products">
+    <div class="img9">
+        <a href="../about%20sharp/about%20sharp.html" target="_blank"><img src="../picture/关于Sharp.png" height="50" width="100"/></a>
+        <a href="http://localhost:3019/wuliu"target="_blank"><img src="../picture/物流信息.png" height="50" width="100"/></a>
+        <a href="../order%20status/order%20status.html"target="_blank"><img src="../picture/订单状态.png" height="50" width="100"/></a>
+        <a href="../Returns%20a%20replacement/Returns%20a%20replacement.html"target="_blank"><img src="../picture/退货换货.png" height="50" width="100"/></a>
+        <a href="../policy/policy.html"target="_blank"><img src="../picture/相关政策.png" height="50" width="100"/></a>
+        <a href="../Common%20problems/Common%20problems.html"target="_blank"><img src="../picture/常见问题.png" height="50" width="100"/></a>
+        <a href="../Contact%20us/Contact%20us.html"target="_blank"><img src="../picture/联系我们.png" height="50" width="100"/></a>
+        <a href="../join%20us/join%20us.html"target="_blank"><img src="../picture/加入我们.png" height="50" width="100"/></a>
+    </div>
+    <p class="p7">订阅Sharp最新动态</p>
+    <form action="" method="get" style="height: 100px">
+        <div class="relative3">
+            <input type="text" name="email" size="56" maxlength="24" value=" Email.." style="color: darkgray ;height: 30px ;width: 350px;border-color: black;"id="sub"onclick="clearme1()">
+        </div>
+        <div class="relative4">
+            <input type="button" value="订阅" style="height: 38px;width: 70px ;background: #1f1a1a;color: #FFFFFF;font-weight: bold;border: none;border-color: black"id="sub1"onclick="sub11()">
+        </div>
+        <div class="img10">
+            <a href="https://weixin.qq.com/" target="_blank"> <img src="../picture/微信.png" height="30" width="30"/></a>
+            <a href="https://weibo.com/" target="_blank"> <img src="../picture/微博.png" height="30" width="30"/></a>
+            <a href="http://www.tui-te.com/" target="_blank">    <img src="../picture/twitter新.png" height="30" width="30"/></a>
+            <a href="https://m.facebook.com/" target="_blank">    <img src="../picture/Facebook.png" height="30" width="30"/></a>
+            <a href="http://instagram.com/" target="_blank">   <img src="../picture/ins新.png" height="30" width="30"/></a>
+        </div>
+        <input type="text"value="裁缝剪"name="sname" style="display:none">
+    </form>
+</footer>
+</form>
+</body>
+<script>
+    function clicktu1() {
+        var b=document.getElementById("datu");
+        var a=document.getElementById("tu1");
+        var a2=document.getElementById("tu2");
+        var a3=document.getElementById("tu3");
+        var a4=document.getElementById("tu4");
+        a.style.width="115px";
+        a2.style.width="100px";
+        a3.style.width="100px";
+        a4.style.width="100px";
+        b.src="picture/1.png";
+        // b.data-zoom-image="./picture/1_large.png";
+    }
+    function clicktu2() {
+
+        var b=document.getElementById("datu");
+        var a=document.getElementById("tu1");
+        var a2=document.getElementById("tu2");
+        var a3=document.getElementById("tu3");
+        var a4=document.getElementById("tu4");
+        a.style.width="100px";
+        a2.style.width="115px";
+        a3.style.width="100px";
+        a4.style.width="100px";
+        b.src="picture/平剪2.png";
+        // b.data-zoom-image="./picture/平剪2_large.png";
+    }
+    function clicktu3() {
+
+        var b=document.getElementById("datu");
+        var a=document.getElementById("tu1");
+        var a2=document.getElementById("tu2");
+        var a3=document.getElementById("tu3");
+        var a4=document.getElementById("tu4");
+        a.style.width="100px";
+        a2.style.width="100px";
+        a3.style.width="115px";
+        a4.style.width="100px";
+        b.src="picture/平剪3.png";
+    }
+    function clicktu4() {
+
+        var b=document.getElementById("datu");
+        var a=document.getElementById("tu1");
+        var a2=document.getElementById("tu2");
+        var a3=document.getElementById("tu3");
+        var a4=document.getElementById("tu4");
+        a.style.width="100px";
+        a2.style.width="100px";
+        a3.style.width="100px";
+        a4.style.width="115px";
+        b.src="picture/平剪4.png";
+    }
+</script>
+<script>
+    $('#datu').elevateZoom();
+</script>
+<script>
+    function changecolor() {
+        var a=document.getElementById("size1");
+        a.style.color="white";
+        a.style.backgroundColor="rgb(171, 79, 79)";
+        a.style.border="0";
+    }
+
+</script>
+<script>
+
+    function addnumber2() {
+        var aa=document.getElementById("content33");
+        var d=parseInt(document.getElementById("content33").value);
+        aa.value=d+1;
+
+
+    };
+    function jian2() {
+        var aa=document.getElementById("content33");
+        aa.value-=1;
+    };
+    var w=document.getElementById("addto").onclick=function () {
+        alert('添加成功！');
+        window.stop();
+    }
+</script>
+</html>

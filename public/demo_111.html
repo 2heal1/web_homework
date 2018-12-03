@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>111</title>
+    <style>
+        .left-to-right{
+            position:relative;
+            width: 332px;
+            height: 60px;
+        }
+        /*.left-to-right>a{*/
+            /*font-size: 35px;*/
+        /*}*/
+
+        /*使用伪类给a下面添加下划线*/
+        .left-to-right:after{
+            content:'';
+            width:0;
+            height:5px;
+            position:absolute;
+            left:0;
+            bottom:-5px;
+            border-radius: 5px;
+            background: #23252a;
+            transition:width 0.3s ;
+        }
+
+        .left-to-right:hover::after{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+<div class="left-to-right">
+    <a>hhhhh</a>
+</div>
+</body>
+</html>

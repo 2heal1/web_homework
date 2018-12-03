@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a</title>
+</head>
+<body>
+<form>
+    <input type="text" name="inputId" id="inputId">    email
+    <input type="submit" value="register"onclick="check()">
+
+</form>
+<p>sdasdas</p>
+<input type="submit"onclick="clie()"value="hidden">
+<input type="submit"onclick="clie2()"value="display">
+</body>
+<script>
+    function check(){
+        var value = document.getElementById("inputId").value;
+        var reg=/^[1-9]\d*$|^0$/;   // 注意：故意限制了 0321 这种格式，如不需要，直接reg=/^\d+$/;
+        if(reg.test(value)==true){
+            alert("都是数字！通过");
+
+        }else{
+            alert("不是纯数字！失败！");
+
+        }
+    }
+</script>
+<script>
+    function clie() {
+        var p=document.getElementsByTagName("p");
+        p[0].style.display="none";
+    }
+    function clie2() {
+        var p=document.getElementsByTagName("p");
+        p[0].style.display="block";
+    }
+
+</script>
+</html>

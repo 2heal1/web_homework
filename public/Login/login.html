@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+        <style type="text/css">
+            .relative1 {
+                position: relative;
+                top: -20px;
+                left: 1200px;
+                width: 200px;
+                margin: 0;
+            }
+            .relative2 {
+                position: relative;
+                top: 50px;
+                left: 640px;
+                width: 200px;
+                margin: 0;
+            }
+            .relative3 {
+                position: relative;
+                top: 60px;
+                left: 529px;
+                width: 100px;
+                margin: 0;
+            }
+            .relative11 {
+                position: relative;
+                top: 60px;
+                left: 529px;
+                width: 100px;
+                margin: 0;
+            }
+        </style>
+    <script>
+        function clearme1() {
+            var a=document.getElementById("1");
+            if(a.value=="电子邮箱")
+            {
+                a.value=" ";
+            }
+
+        }
+    </script>
+    <script>
+        function clearme2() {
+            var b=document.getElementById("2");
+            if(b.value=="密码")
+            {
+                b.value=" ";
+            }
+
+        }
+
+    </script>
+    <script>
+         function ab() {
+             var a=document.getElementById("1");
+             var b=document.getElementById("2");
+             if(a.value=="电子邮箱")
+             {
+                 alert("电子邮箱不能为空！");
+             }
+             if(a.value==" ")
+             {
+                 alert("电子邮箱不能为空！");
+             }
+             if(b.value=="密码")
+             {
+                 alert("密码不能为空！");
+             }
+            if(b.value==" ")
+             {
+                 alert("密码不能为空！");
+             }
+             // else if(a.value!=" "&&a.value!="电子邮箱"&&b.value!=" "&&b.value!="密码")
+             // {
+             //     alert("登录成功");
+             //     window.open("../index2/index2.html");
+             //     window.close();
+             //
+             // }
+
+         }
+    </script>
+</head>
+<body style="margin: 0">
+<div style="position:absolute;z-index:-1;width:100%;height:100%;">
+    <img src="../picture/背景.jpg" width="100%" height="100%" />
+</div>
+<a href="../index2/index2.html"  target="_blank"><img src="../picture/SHARP.png" height="53.89167" width="105.556"/></a>
+<form action="/login" method="post">
+    <div class="relative1">
+        <a href="http://www.tui-te.com/" target="_blank">   <img src="../picture/twitter.png" height="36.67" width="47.5"/></a>
+        <a href="http://instagram.com/" target="_blank"> <img src="../picture/ins.png" height="34.2006" width="38.9739"/></a>
+        <a href="https://m.facebook.com/" target="_blank"><img src="../picture/fcebook.png" height="34.9238" width="45.238"/></a>
+    </div>
+    <div class="relative2"><h1>
+        Welcome !
+    </h1></div>
+    <div></div><div></div>
+    <div class="relative3">
+        <input type="text" name="email" size="70" maxlength="20" value="电子邮箱" style="color: darkgray ;height: 30px ;width: 385px" onclick="clearme1()" id="1">
+        <br><br><br>
+        <input type="text" name="password" size="70" maxlength="10" value="密码" style="color: darkgray ;height: 30px ;width: 385px"onclick="clearme2()"id="2" >
+    </div>
+    <br><br>
+
+    <div class="relative11">
+        <input type="submit" value="立刻登录" style="height: 40px;width: 385px ;background: #1f1a1a;color: #FFFFFF;font-weight: bold;cursor: pointer" onclick="ab()">
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+</head>
+<body>
+{{{a}}}
+<article class="img8">
+    <a style="margin-left: 7.5px"><img src="../picture/p1.png"width="30%" height="30%"/></a>
+    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+    <a style="margin-left: 140px" ><img src="../picture/花艺剪.png"width="20%" height="20%"/></a>
+    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+    <a style="margin-left: 140px"><img src="../picture/p2.png" width="30%" height="30%"/></a>
+</article>
+<aside>
+    <div style="position:absolute;z-index:-1;top: 555px;left: 0px" >
+        <img src="../picture/new arrival.png" height="500" width="1519"/>
+    </div>
+    <div class="play3">
+        <img width="400px" name="7" id='7' src="../picture/7.png" onclick="href();">
+    </div>
+    <div class="play">
+        <img  width="400px" name="1" id='1' src="../picture/1.png" onclick="href();">
+    </div>
+    <div class="play2">
+        <img width="400px"name="4" id='4' src="../picture/4.png" onclick="href();">
+    </div>
+
+</aside>
+<script>
+    timer = setInterval(function () {
+        //换图
+        var images = document.getElementById("7");
+        var index = Math.random() * 3;
+        var imageIndex = parseInt(index) + 7;
+        images.src = '../picture/' + imageIndex + '.png';
+        // images.style.height=90+'%';
+        images.style.width = 400 + 'px';
+
+        images.name = imageIndex;
+    }, 3000);
+    var href=function () {
+        var images=document.getElementById("7");
+        if(images.name=="7")
+            window.open("https://www.baidu.com/");
+        else if(images.name=="8")
+            window.open("http://xyq.163.com/");
+        else if(images.name=="9")
+            window.open("http://www.qq.com/");
+    }
+    var container = document.getElementsByClassName("play3");
+    container.onmouseenter = function () {
+        clearInterval(timer);
+    }
+    container.onmouseleave = function () {
+        autoPlay();
+    }
+</script>
+<script>
+    setInterval(function () {
+        //换图
+        var images=document.getElementById("1");
+        var index=Math.random()*3;
+        var imageIndex=parseInt(index)+1;
+        images.src='../picture/'+imageIndex+'.png';
+        // images.style.height=80+'%';
+        images.style.width=400+'px';
+
+        images.name=imageIndex;
+    },3000);
+    var href=function () {
+        var images=document.getElementById("1");
+        if(images.name=="1")
+            window.open("https://www.baidu.com/");
+        else if(images.name=="2")
+            window.open("http://xyq.163.com/");
+        else if(images.name=="3")
+            window.open("http://www.qq.com/");
+    }
+</script>
+<script>
+    setInterval(function () {
+        //换图
+        var images=document.getElementById("4");
+        var index=Math.random()*3;
+        var imageIndex=parseInt(index)+4;
+        images.src='../picture/'+imageIndex+'.png';
+        // images.style.height=80+'%';
+        images.style.width=400+'px';
+
+        images.name=imageIndex;
+    },3000);
+    var href=function () {
+        var images=document.getElementById("4");
+        if(images.name=="4")
+            window.open("https://www.baidu.com/");
+        else if(images.name=="5")
+            window.open("http://xyq.163.com/");
+        else if(images.name=="6")
+            window.open("http://www.qq.com/");
+    }
+</script>
+<script>
+    function clearme1() {
+        var b=document.getElementById("sub");
+        if(b.value==" Email..")
+        {
+            b.value=" ";
+        }
+
+    }
+
+</script>
+<script>
+    function sub11() {
+        var a=document.getElementById("sub1");
+        var b=document.getElementById("sub");
+        if(b.value==" Email.."||b.value==" ")
+        {
+            alert("订阅邮箱不能为空！");
+        }
+       
+    }
+</script>
+<style type="text/css">
+    div.menu-bar ul ul {
+        display: none;
+    }
+
+    div.menu-bar li:hover ul {
+        display: block;
+    }
+    .h a{
+        color: bisque;
+        font-size: large;
+    }
+    .imgC {
+        position: absolute;
+        left: 700px;
+        top: 70px;
+        display: none;
+    }
+    a:hover +.imgC {
+        display: block;
+    }
+    ul li{
+        list-style-type:none;
+        z-index:0
+    }
+    .img1{
+        left: 5px;
+        position: absolute;
+        border: 0px;
+        padding: 0px;
+        top: 3px;
+    }
+    li{
+        width: 500px;
+        margin: 0px;
+    }
+    ul{
+        margin: 0px;
+    }
+    .img2{
+        position: absolute;
+        margin-left: -70px;
+        margin-top: 10px;
+    }
+    .img2 img:hover{
+        transform: scale(1.05);
+        cursor: default;
+        filter:alpha(Opacity=80);
+        -moz-opacity:0.8;
+        opacity: 0.8;
+    }
+    .img2 img{
+        cursor: pointer;
+        transition: all 0.6s;
+
+    }
+    .img3{
+        position: absolute;
+        left: 185px;
+        top: 45px;
+        width: 1300px;
+        z-index: 0;
+    }
+    .img3 img:hover{
+        transform: scale(1.05);
+        cursor: default;
+        filter:alpha(Opacity=80);
+        -moz-opacity:0.8;
+        opacity: 0.8;
+    }
+    .img3 img{
+        cursor: pointer;
+        transition: all 0.6s;
+
+    }
+    .img4{
+        position: absolute;
+        left: 699px;
+        top: -5px;
+    }
+    .img5{
+        position: absolute;
+        left: 1380px;
+        top: 1px;
+    }
+    .img6{
+        position: absolute;
+        left: 1430px;
+        top: 1px;
+    }
+    .img7{
+        position: absolute;
+        left: 1480px;
+        top: -5px;
+    }
+    .img8{
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 0px;
+        width: 1500px;
+        z-index: -1;
+    }
+    .img8 img:hover{
+        transform: scale(1.05);
+        cursor: default;
+        filter:alpha(Opacity=80);
+        -moz-opacity:0.8;
+        opacity: 0.8;
+    }
+    .img8 img{
+        cursor: pointer;
+        transition: all 0.6s;
+
+    }
+    .img9{
+        position: absolute;
+        top: 1200px;
+        left:40px;
+        width: 500px;
+        z-index:0
+    }
+    .img9 img:hover{
+        transform: scale(1.05);
+        cursor: default;
+        filter:alpha(Opacity=80);
+        -moz-opacity:0.8;
+        opacity: 0.8;
+    }
+    .img9 img{
+        cursor: pointer;
+        transition: all 0.6s;
+
+    }
+    .img10{
+        position: absolute;
+        width: 169px;
+        top: 1300px;
+        left:950px;
+        z-index:0
+    }
+    .img10 img:hover{
+        transform: scale(1.05);
+        cursor: default;
+        filter:alpha(Opacity=80);
+        -moz-opacity:0.8;
+        opacity: 0.8;
+    }
+    .img10 img{
+        cursor: pointer;
+        transition: all 0.6s;
+
+    }
+    .p1{
+        position: absolute;
+        left: 80px;
+        top: -23px;
+        font-weight: bolder;
+        font-size: 21px;
+        color: dimgrey;
+        cursor: default;
+    }
+    .p1:hover{
+        cursor: default;
+        filter:alpha(Opacity=80);
+        -moz-opacity:0.8;
+        opacity: 0.8;
+        transition: all 2s;
+    }
+
+    .p2{
+        height: 53px;
+        width: 120px;
+        position: absolute;
+        left: 140px;
+        top: -23px;
+        font-weight: bolder;
+        font-size: 21px;
+        color: dimgrey;
+        cursor: default;
+    }
+    .p2:hover{
+        cursor: default;
+        filter:alpha(Opacity=80);
+        -moz-opacity:0.8;
+        opacity: 0.8;
+        transition: all 2s;
+    }
+    .p3{
+        position: absolute;
+        left: 220px;
+        top: -23px;
+        font-weight: bolder;
+        font-size: 21px;
+        color: dimgrey;
+    }
+    .p4{
+        position: absolute;
+        width: 42px;
+        left: 1100px;
+        top: -23px;
+        font-weight: bolder;
+        font-size: 21px;
+        color: dimgrey;
+    }
+    .p5{
+        position: absolute;
+        width: 42px;
+        left: 1150px;
+        top: -23px;
+        font-weight: bolder;
+        font-size: 21px;
+        color: dimgrey;
+    }
+    .p6{
+        position: absolute;
+        left: 1250px;
+        top: -23px;
+        font-weight: bolder;
+        font-size: 21px;
+        color: dimgrey;
+    }
+    .p7{
+        position: absolute;
+        width: 188px;
+        left: 950px;
+        top: 1180px;
+        font-weight: bolder;
+        font-size: 21px;
+        color: black;
+    }
+    .relative1{
+        position: absolute;
+        left: 950px;
+        top: 1250px;
+
+    }
+    .relative2{
+        position: absolute;
+        left: 1240px;
+        top: 1249px;
+    }
+    a:hover{
+        color: darkgray;
+    }
+    a{
+        color: #1f1a1a;
+        text-decoration: none;
+    }
+    .play{
+        position: absolute;
+        top: 650px;
+        left: 50px;
+    }
+    .play2{
+        position: absolute;
+        top: 650px;
+        left: 600px;
+    }
+    .play3{
+        position: absolute;
+        top: 650px;
+        left: 1100px;
+    }
+
+</style>
+</body>
+</html>
